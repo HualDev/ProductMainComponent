@@ -11,10 +11,13 @@
 }
 
 body{
-    margin: 0;
-    
+    margin: 0;    
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--cream);  
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
 }
 
 main{
@@ -23,14 +26,16 @@ main{
     border-radius: 0.8rem 0.8rem 0 0;
 }
 
-img{
-    width: 100%;
+.image{
+    background-image: url('./images/image-product-mobile.jpg');
+    height: 60vh;
     border-radius: 0.8rem 0.8rem 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .details{
     background-color: var(--white);
-    margin-top: -0.3rem;
     padding: 1.5rem;
 }
 
@@ -94,5 +99,67 @@ h1{
     
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:500px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vh;
+        height: 60vh;
+    }
+
+    .image{
+        background-image: url('./images/image-product-desktop.jpg');
+        width: 35vh;
+        height: 45vh;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.8rem 0 0 0.8rem;
+    }    
+
+    .details{
+        width: 35vh;
+        height: 45vh;
+    }
+
+    .perfume{
+        font-size: 0.5rem;
+    }
+
+    p{
+        font-size: 0.6rem;
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    .price{
+        border-top: 1rem;
+    }
+
+    .actualPrice{
+        font-size: 1.3rem;
+    }
+
+    .lastPrice{
+        font-size: 0.7rem;
+    }
+
+    .button{
+        padding: 0.5rem;
+        font-size: 0.6rem;
+        margin-top: 1rem;
+    }
+
+    .button img{
+        width: 0.7rem;
+    }
+
+    .attribution{
+        margin-bottom: 0;
+    }
 }
 
