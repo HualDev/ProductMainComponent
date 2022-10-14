@@ -1,0 +1,98 @@
+:root{
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);  
+}
+
+main{
+    width: 90%;
+    margin:  2rem auto;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+img{
+    width: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.details{
+    background-color: var(--white);
+    margin-top: -0.3rem;
+    padding: 1.5rem;
+}
+
+.perfume{
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+p{
+    opacity: 0.4;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--darkGrayishBlue);
+}
+
+h1{
+   font-family: 'Fraunces', serif; 
+   opacity: 0.8;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.actualPrice{
+    font-size: 2rem;
+    color: var(--darkCyan);
+    font-family: 'Fraunces', serif; 
+    font-weight: 800;
+}
+
+.lastPrice{
+    text-decoration: line-through;
+    color: var(--darkGrayishBlue);
+}
+
+.button{
+    background-color: var(--darkCyan);
+    color: var(--white);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.button img{
+    width: 1rem;
+}
+
+ .attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
